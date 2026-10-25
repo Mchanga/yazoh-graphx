@@ -502,6 +502,15 @@ a {
   object-fit: cover;
 }
 
+.project-art__media--video {
+  background: #17121e;
+  object-fit: contain;
+}
+
+.project-art__media::-webkit-media-controls {
+  max-width: 100%;
+}
+
 .project-art__media:focus-visible {
   outline: 3px solid #9229ed;
   outline-offset: -3px;
@@ -1516,8 +1525,19 @@ a {
   }
 
   .hero {
-    min-height: 650px;
-    height: 90svh;
+    min-height: 620px;
+    height: max(90svh, 620px);
+  }
+
+  .hero__video {
+    object-position: center;
+    opacity: 0.55;
+  }
+
+  .hero__shade {
+    background:
+      linear-gradient(90deg, rgb(17 13 22 / 88%) 0%, rgb(17 13 22 / 52%) 100%),
+      linear-gradient(0deg, rgb(17 13 22 / 58%) 0%, transparent 55%);
   }
 
   .hero__content {
@@ -1621,9 +1641,10 @@ a {
   }
 
   .project-filter {
-    min-height: 33px;
+    min-height: 40px;
     padding: 0 11px;
     font-size: 9px;
+    touch-action: manipulation;
   }
 
   .project-grid {
@@ -1632,7 +1653,16 @@ a {
   }
 
   .project-art {
-    min-height: 300px;
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+  }
+
+  .project-art__media--video {
+    padding: 0;
+  }
+
+  .project-art__media--video::-webkit-media-controls-panel {
+    min-height: 40px;
   }
 
   .project-art__mark {
@@ -1683,6 +1713,15 @@ a {
 
   .page-contact-card .button {
     white-space: normal;
+  }
+
+  .page-service-work__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-service-work__item img,
+  .page-service-work__item video {
+    aspect-ratio: 4 / 3;
   }
 
   .page-footer {

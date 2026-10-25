@@ -71,6 +71,8 @@ function Home() {
           loop
           muted
           playsInline
+          preload="metadata"
+          poster={yazzoh}
           className="hero__video"
           aria-hidden="true"
         >
@@ -243,7 +245,7 @@ function Home() {
                 <div className="project-art project-art--media">
                   {project.mediaType === "video" ? (
                     <video
-                      className="project-art__media"
+                      className="project-art__media project-art__media--video"
                       src={project.src}
                       controls
                       muted

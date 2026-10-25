@@ -45,7 +45,7 @@ export function ProjectGallery({ category }) {
           <div className="project-art project-art--media">
             {project.mediaType === "video" ? (
               <video
-                className="project-art__media"
+                className="project-art__media project-art__media--video"
                 src={project.src}
                 controls
                 muted
