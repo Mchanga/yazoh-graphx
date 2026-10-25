@@ -56,7 +56,7 @@ a {
 }
 
 .hero__video {
-  object-fit: contain;
+  object-fit: cover;
   opacity: 0.67;
 }
 
@@ -1530,7 +1530,7 @@ a {
   }
 
   .hero__video {
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
     opacity: 0.55;
   }
