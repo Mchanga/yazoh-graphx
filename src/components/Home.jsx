@@ -310,7 +310,7 @@ function Home() {
           <span>
             © {currentYear} Created by{" "}
             <a
-              href="https://sanistech-portfolio-hnvi.onrender.com/"
+              href="https://sandistech.onrender.com/"
               target="_blank"
               rel="noreferrer"
             >
